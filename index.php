@@ -41,76 +41,109 @@
               <ul class="director">
                 <li>
                 <!-- DIRECTOR -->
-                  <a href="#" data-toggle="modal" data-target="#dir"><span>Director</span></a>
-                  <!-- MODAL -->
-                  <div class="modal fade" id="dir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					        <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Profile</h4>
-					      </div>
-					      <div class="modal-body" style="text-align: center;">
-						      	<img width="200px" height="200px" src="img/walp.jpg" alt="..." class="img-circle">
-						      	<hr>
-						      	<p>
-						      		<strong>NAMA</strong>
-						      		<br>
-						      		<!-- get nama in DB -->
-						      		<br>
-						      		<strong>NIP</strong>
-						      		<br>
-						      		<!-- get nip in DB -->
-						      	</p>
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-				<!-- END -->
+                  <a href="#" >
+                  	<span>
+                  		<img style="margin:0px 5px 0px 5px" class="img-circle pull-left" src="img/walp.jpg" width="100px" height="100px">
+                  		
+                  	</span>
+                  	<p style="margin-top: 40px">
+                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+                  		<br>
+                  		NIP:	
+                  	</p>
+                  </a>
 				    
 				<!-- subdir -->
                   <ul class="subdirector">
-                      <li><a href="#" data-toggle="modal" data-target="#subdir"><span>Assistante Director</span></a></li>
+                      <li>
+                      	 <a href="#" >
+		                  	<span>
+		                  		<img style="margin:0px 5px 0px 5px" class="img-circle pull-left" src="img/walp.jpg" width="100px" height="100px">
+		                  		
+		                  	</span>
+		                  	<p style="margin-top: 40px">
+		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<br>
+		                  		NIP:	
+		                  	</p>
+		                  </a>
+                      </li>
                   </ul>
-                  <!-- MODAL -->
-                  <div class="modal fade" id="subdir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					        <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Profile</h4>
-					      </div>
-					      <div class="modal-body" style="text-align: center;">
-						      	<img width="200px" height="200px" src=".." alt="..." class="img-circle">
-						      	<hr>
-						      	<p>
-						      		<strong>NAMA</strong>
-						      		<br>
-						      		<!-- get nama in DB -->
-						      		<br>
-						      		<strong>NIP</strong>
-						      		<br>
-						      		<!-- get nip in DB -->
-						      	</p>
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-				<!-- END -->
 
                   <ul class="departments cf">                             
-                    <li><a href="#"><span>Administration</span></a></li>
-                    <li class="department dep-a"><a href="#"><span>Department A</span></a></li>
-                    <li class="department dep-b"><a href="#"><span>Department B</span></a></li>
-                    <li class="department dep-c"><a href="#"><span>Department C</span></a></li>
-                    <li class="department dep-d"><a href="#"><span>Department D</span></a></li>
-                    <li class="department dep-e"><a href="#"><span>Department E</span></a></li>
+                    <li>
+                    	 <a href="#" >
+		                  	<span>
+		                  		<img style="margin:0px 5px 0px 5px" class="img-circle pull-left" src="img/walp.jpg" width="100px" height="100px">
+		                  		
+		                  	</span>
+		                  	<p style="margin-top: 40px">
+		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<br>
+		                  		NIP:	
+		                  	</p>
+		                  </a>
+                    </li>
+                    <li class="department dep-a">
+                    	 <a href="#" >
+		                  	<span>
+		                  		<img class="img-circle" src="img/walp.jpg" width="120px" height="120px">
+		                  	</span>
+		                  	<p style="margin-top: 20px">
+		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<br>
+		                  		NIP:	
+		                  	</p>
+		                  </a>
+                    </li>
+                    <li class="department dep-b">
+                    	<a href="#" >
+		                  	<span>
+		                  		<img class="img-circle" src="img/walp.jpg" width="120px" height="120px">
+		                  	</span>
+		                  	<p style="margin-top: 20px">
+		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<br>
+		                  		NIP:	
+		                  	</p>
+		                  </a>
+                    </li>
+                    <li class="department dep-c">
+                    	<a href="#" >
+		                  	<span>
+		                  		<img class="img-circle" src="img/walp.jpg" width="120px" height="120px">
+		                  	</span>
+		                  	<p style="margin-top: 20px">
+		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<br>
+		                  		NIP:	
+		                  	</p>
+		                  </a>
+                    </li>
+                    <li class="department dep-d">
+                    	<a href="#" >
+		                  	<span>
+		                  		<img class="img-circle" src="img/walp.jpg" width="120px" height="120px">
+		                  	</span>
+		                  	<p style="margin-top: 20px">
+		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<br>
+		                  		NIP:	
+		                  	</p>
+		                  </a>
+                    </li>
+                    <li class="department dep-e">
+                    	<a href="#" >
+		                  	<span>
+		                  		<img class="img-circle" src="img/walp.jpg" width="120px" height="120px">
+		                  	</span>
+		                  	<p style="margin-top: 20px">
+		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<br>
+		                  		NIP:	
+		                  	</p>
+		                  </a>
+                    </li>
                   </ul>
                 </li>
               </ul>   
