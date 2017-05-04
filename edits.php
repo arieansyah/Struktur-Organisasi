@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
@@ -23,7 +23,6 @@
 				  <div class="form-group">
 				    <label for="exampleInputFile">File input</label>
 				    <input type="file" id="exampleInputFile">
-				    
 				  </div>
 				  <button type="submit" class="btn btn-primary pull-right">Simpan</button>
 				</form>
