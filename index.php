@@ -1,3 +1,8 @@
+<?php 
+	include "db/koneksi.php"; 
+	$query = $mysqli->query("SELECT * FROM visimisi");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +23,9 @@
 			  </div>
 			  <div class="panel-body">
 			  <!-- show data on database -->
+			  <?php foreach ($query as $key)
+			  	echo $key['visi']
+			  ?>
 			  </div>
 			</div>
 
@@ -27,6 +35,9 @@
 			  </div>
 			  <div class="panel-body">
 			  	<!-- show data on database -->
+				  <?php foreach ($query as $key)
+				  	echo $key['misi']
+				  ?>
 			  </div>
 			</div>
   		</div>
