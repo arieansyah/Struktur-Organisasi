@@ -1,7 +1,8 @@
 <?php 
 	include "db/koneksi.php";
-	$query = $mysqli->query("SELECT * FROM visimisi WHERE id='$_GET[id]'");
-	$data = $query->fetch_array();
+	$id = $_GET['id'];
+	$query = $mysqli->query("SELECT * FROM visimisi WHERE id='$id'");
+	while($data = $query->fetch_array()){
 
 	/*$id = $_POST['id'];
 	$visi = $_POST['visi'];
@@ -23,7 +24,7 @@
 			<h1 class="text-center">
 				Edit Visi & Misi
 			</h1>
-				<form role="form" action="update.php">
+				<form action="update.php" method="post">
 				  <div class="form-group">
 				    <label for="visi">Visi</label>
 				    <input type="hidden" name="id" value="<?php echo $data['id'] ?>">
@@ -38,5 +39,6 @@
 				</form>
 		</div>
 	</div>
+	<?php } ?>
 </body>
 </html>

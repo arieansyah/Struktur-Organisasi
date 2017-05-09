@@ -1,6 +1,7 @@
 <?php 
 	include "db/koneksi.php"; 
 	$query = $mysqli->query("SELECT * FROM visimisi");
+	while($data = $query->fetch_array()){
 ?>
 
 <!DOCTYPE html>
@@ -23,9 +24,7 @@
 			  </div>
 			  <div class="panel-body">
 			  <!-- show data on database -->
-			  <?php foreach ($query as $key)
-			  	echo $key['visi']
-			  ?>
+			  <?php echo $data['visi']?>
 			  </div>
 			</div>
 
@@ -35,9 +34,7 @@
 			  </div>
 			  <div class="panel-body">
 			  	<!-- show data on database -->
-				  <?php foreach ($query as $key)
-				  	echo $key['misi']
-				  ?>
+				  <?php echo $data['misi']?>
 			  </div>
 			</div>
   		</div>
@@ -163,7 +160,7 @@
         </figure>
     </div>
         <!-- modal -->
-	
+<?php } ?>
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

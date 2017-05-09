@@ -1,8 +1,8 @@
 <?php 
 	include "db/koneksi.php"; 
 	$query = $mysqli->query("SELECT * FROM visimisi");
-	$data = $query->fetch_array();
 	$struktur = $mysqli->query("SELECT * FROM struktur");
+	while($data = $query->fetch_array()){
 ?>
 
 <!DOCTYPE html>
@@ -49,6 +49,7 @@
 					</a>
 	  		</div>
 		</div>
+	<?php } ?>
 		<div class="row">
 			<div class="col-md-12">
 			<h1 class="text-center">Struktur</h1>
