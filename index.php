@@ -49,30 +49,42 @@
               <ul class="director">
                 <li>
                 <!-- DIRECTOR -->
+            <?php 
+            	$query = $mysqli->query("SELECT * FROM struktur where id=1");
+            	$ketua = $query->fetch_array();
+            ?>
                   <a href="#" >
                   	<span>
-                  		<img style="margin:0px 5px 0px 5px" class="img-circle pull-left" src="img/walp.jpg" width="100px" height="100px">
+                  		<img style="margin:0px 5px 0px 5px" class="img-circle pull-left" src="img/<?php echo $ketua['foto'] ?>" width="100px" height="100px">
                   		
                   	</span>
                   	<p style="margin-top: 40px">
-                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+                  		<u><?php echo $ketua['nama']; ?></u>
                   		<br>
-                  		NIP:	
+                  		<?php echo $ketua['jabatan']; ?>
+                  		<br>
+                  		NIP: <?php echo $ketua['nip']; ?>	
                   	</p>
                   </a>
 				    
 				<!-- subdir -->
                   <ul class="subdirector">
                       <li>
+                <?php 
+	            	$query = $mysqli->query("SELECT * FROM struktur where id=2");
+	            	$subketua = $query->fetch_array();
+	            ?>
                       	 <a href="#" >
 		                  	<span>
-		                  		<img style="margin:0px 5px 0px 5px" class="img-circle pull-left" src="img/walp.jpg" width="100px" height="100px">
+		                  		<img style="margin:0px 5px 0px 5px" class="img-circle pull-left" src="img/<?php echo $subketua['foto'] ?>" width="100px" height="100px">
 		                  		
 		                  	</span>
 		                  	<p style="margin-top: 40px">
-		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<u><?php echo $subketua['nama']; ?></u>
 		                  		<br>
-		                  		NIP:	
+		                  		<?php echo $subketua['jabatan']; ?>
+		                  		<br>
+		                  		NIP: <?php echo $subketua['nip']; ?>	
 		                  	</p>
 		                  </a>
                       </li>
@@ -80,75 +92,111 @@
 
                   <ul class="departments cf">                             
                     <li>
+                <?php 
+	            	$query = $mysqli->query("SELECT * FROM struktur where id=3");
+	            	$subketua2 = $query->fetch_array();
+	            ?>
                     	 <a href="#" >
 		                  	<span>
-		                  		<img style="margin:0px 5px 0px 5px" class="img-circle pull-left" src="img/walp.jpg" width="100px" height="100px">
+		                  		<img style="margin:0px 5px 0px 5px" class="img-circle pull-left" src="img/<?php echo $subketua2['foto'] ?>" width="100px" height="100px">
 		                  		
 		                  	</span>
 		                  	<p style="margin-top: 40px">
-		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<u><?php echo $subketua2['nama']; ?></u>
 		                  		<br>
-		                  		NIP:	
+		                  		<?php echo $subketua2['jabatan']; ?>
+		                  		<br>
+		                  		NIP: <?php echo $subketua2['nip']; ?>	
 		                  	</p>
 		                  </a>
                     </li>
                     <li class="department dep-a">
+                <?php 
+	            	$query = $mysqli->query("SELECT * FROM struktur where id=4");
+	            	$anggota1 = $query->fetch_array();
+	            ?>
                     	 <a href="#" >
 		                  	<span>
-		                  		<img class="img-circle" src="img/walp.jpg" width="120px" height="120px">
+		                  		<img class="img-circle" src="img/<?php echo $anggota1['foto'] ?>" width="120px" height="120px">
 		                  	</span>
 		                  	<p style="margin-top: 20px">
-		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<u><?php echo $anggota1['nama']; ?></u>
 		                  		<br>
-		                  		NIP:	
+		                  		<?php echo $anggota1['jabatan']; ?>
+		                  		<br>
+		                  		NIP: <?php echo $anggota1['nip']; ?>	
 		                  	</p>
 		                  </a>
                     </li>
                     <li class="department dep-b">
-                    	<a href="#" >
+                <?php 
+	            	$query = $mysqli->query("SELECT * FROM struktur where id=5");
+	            	$anggota3 = $query->fetch_array();
+	            ?>
+                    	 <a href="#" >
 		                  	<span>
-		                  		<img class="img-circle" src="img/walp.jpg" width="120px" height="120px">
+		                  		<img class="img-circle" src="img/<?php echo $anggota3['foto'] ?>" width="120px" height="120px">
 		                  	</span>
 		                  	<p style="margin-top: 20px">
-		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<u><?php echo $anggota3['nama']; ?></u>
 		                  		<br>
-		                  		NIP:	
+		                  		<?php echo $anggota3['jabatan']; ?>
+		                  		<br>
+		                  		NIP: <?php echo $anggota3['nip']; ?>	
 		                  	</p>
 		                  </a>
                     </li>
                     <li class="department dep-c">
-                    	<a href="#" >
+                    	<?php 
+			            	$query = $mysqli->query("SELECT * FROM struktur where id=6");
+			            	$anggota4 = $query->fetch_array();
+			            ?>
+                    	 <a href="#" >
 		                  	<span>
-		                  		<img class="img-circle" src="img/walp.jpg" width="120px" height="120px">
+		                  		<img class="img-circle" src="img/<?php echo $anggota4['foto'] ?>" width="120px" height="120px">
 		                  	</span>
 		                  	<p style="margin-top: 20px">
-		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<u><?php echo $anggota4['nama']; ?></u>
 		                  		<br>
-		                  		NIP:	
+		                  		<?php echo $anggota4['jabatan']; ?>
+		                  		<br>
+		                  		NIP: <?php echo $anggota4['nip']; ?>	
 		                  	</p>
 		                  </a>
                     </li>
                     <li class="department dep-d">
-                    	<a href="#" >
+                    	<?php 
+			            	$query = $mysqli->query("SELECT * FROM struktur where id=7");
+			            	$anggota5 = $query->fetch_array();
+			            ?>
+                    	 <a href="#" >
 		                  	<span>
-		                  		<img class="img-circle" src="img/walp.jpg" width="120px" height="120px">
+		                  		<img class="img-circle" src="img/<?php echo $anggota5['foto'] ?>" width="120px" height="120px">
 		                  	</span>
 		                  	<p style="margin-top: 20px">
-		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<u><?php echo $anggota5['nama']; ?></u>
 		                  		<br>
-		                  		NIP:	
+		                  		<?php echo $anggota5['jabatan']; ?>
+		                  		<br>
+		                  		NIP: <?php echo $anggota5['nip']; ?>	
 		                  	</p>
 		                  </a>
                     </li>
                     <li class="department dep-e">
-                    	<a href="#" >
+                    	<?php 
+			            	$query = $mysqli->query("SELECT * FROM struktur where id=8");
+			            	$anggota6 = $query->fetch_array();
+			            ?>
+                    	 <a href="#" >
 		                  	<span>
-		                  		<img class="img-circle" src="img/walp.jpg" width="120px" height="120px">
+		                  		<img class="img-circle" src="img/<?php echo $anggota6['foto'] ?>" width="120px" height="120px">
 		                  	</span>
 		                  	<p style="margin-top: 20px">
-		                  		<u>Jhon Smith Abdri.M.A,M.Hum</u>
+		                  		<u><?php echo $anggota6['nama']; ?></u>
 		                  		<br>
-		                  		NIP:	
+		                  		<?php echo $anggota6['jabatan']; ?>
+		                  		<br>
+		                  		NIP: <?php echo $anggota6['nip']; ?>	
 		                  	</p>
 		                  </a>
                     </li>

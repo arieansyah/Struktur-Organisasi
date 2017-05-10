@@ -20,24 +20,24 @@ while($data = $query->fetch_array()){
 			<h1 class="text-center">
 				Edit Struktur
 			</h1>
-				<form action="updatestruk.php" method="post" >
+				<form action="updatestruk.php" method="post" enctype="multipart/form-data">
 				  <div class="form-group">
 				    <label for="exampleInputEmail1">Nama</label>
 						<input type="hidden" name="id" value="<?php echo $data['id'] ?>">
-				    <input type="text" value="<? echo $data['nama'] ?>"class="form-control" id="exampleInputEmail1" >
+				    <input type="text" name="nama" value="<? echo $data['nama'] ?>"class="form-control" id="exampleInputEmail1" >
 				  </div>
 				  <div class="form-group">
 				    <label for="exampleInputPassword1">NIP</label>
-				    <input type="text" value="<?php echo $data['nip'] ?>" class="form-control" id="exampleInputPassword1" >
+				    <input type="text" name="nip" value="<?php echo $data['nip'] ?>" class="form-control" id="exampleInputPassword1" >
 				  </div>
 					<div class="from-group">
 						<label for="exampleInputJabatan">Jabatan</label>
-						<input type="text" value="<? echo $data['jabatan'] ?>" class="form-control" id="exampleInputJabatan" >
+						<input type="text" name="jabatan" value="<? echo $data['jabatan'] ?>" class="form-control" id="exampleInputJabatan" >
 					</div>
 					<br>
 				  <div class="form-group">
-				    <label for="exampleInputFile">Input Foto</label>
-				    <input type="file" value="<? echo $data['foto'] ?>" id="exampleInputFile">
+				    <label>Input Foto</label>
+				    <input type="file" name="foto" value="<? echo $data['foto'] ?>"><? echo $data['foto'] ?>
 				  </div>
 				  <button type="submit" class="btn btn-primary pull-right">Simpan</button>
 				</form>
