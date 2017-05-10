@@ -1,5 +1,5 @@
-<?php 
-	include "db/koneksi.php"; 
+<?php
+	include "db/koneksi.php";
 	$query = $mysqli->query("SELECT * FROM visimisi");
 	$struktur = $mysqli->query("SELECT * FROM struktur");
 	while($data = $query->fetch_array()){
@@ -9,7 +9,7 @@
 <html>
 <head>
 	<title>Halaman Edit</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
@@ -27,7 +27,7 @@
 				  </div>
 				  <div class="panel-body">
 				  	<!-- show data on database -->
-				  	<?php 
+				  	<?php
 						echo $data['visi']
 					?>
 				  </div>
@@ -42,7 +42,7 @@
 				  	<?php
 						echo $data['misi']
 					?>
-				  </div>	
+				  </div>
 				</div>
 					<a href="editvm.php?id=<?php echo $data['id']; ?>">
 						<button type="button" class="btn btn-success btn-lg btn-block">Edit Visi Misi</button>
@@ -50,6 +50,7 @@
 	  		</div>
 		</div>
 	<?php } ?>
+	<br>
 		<div class="row">
 			<div class="col-md-12">
 			<h1 class="text-center">Struktur</h1>
@@ -58,10 +59,12 @@
 				  	<th>No</th>
 				  	<th>Nama</th>
 				  	<th>NIP</th>
+						<th>Jabatan</th>
+						<th>Foto</th>
 				  	<th>Action</th>
 				  </tr>
 
-					<?php 
+					<?php
 						$i=1;
 						foreach ($struktur as $key) {
 					?>
@@ -69,15 +72,18 @@
 							<td><?php echo $i++ ?></td>
 							<td><?php echo $key['nama'] ?></td>
 							<td><?php echo $key['nip'] ?></td>
+							<td><?php echo $key['jabatan'] ?></td>
+							<td><?php echo $key['foto']?></td>
 							<td>
-								<a href="edits.php?id=<?php echo $key['id']; ?>">Edit</a>
-								<!-- <a href="edits.php"><button type="button" class="btn btn-primary">Edit</button></a> -->
+							  <a href="edits.php?id=<?php echo $key['id']; ?>">
+									<button type="button" class="btn btn-primary">Edit</button>
+								</a>
 							</td>
 						</tr>
 
 					<?php
 						}
-					?>				  
+					?>
 				</table>
 			</div>
 		</div>

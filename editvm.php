@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include "db/koneksi.php";
 	$id = $_GET['id'];
 	$query = $mysqli->query("SELECT * FROM visimisi WHERE id='$id'");
@@ -8,14 +8,14 @@
 	$visi = $_POST['visi'];
 	$misi = $_POST['misi'];
 	$mysqli->query("UPDATE visimisi SET visi = '$visi', misi = '$misi', WHERE id='$id'"); */
-	
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
