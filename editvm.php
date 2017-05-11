@@ -34,7 +34,7 @@
 				    <label for="misi">Misi</label>
 				    <textarea rows="8" class="form-control" name="misi"><?php echo $data['misi'] ?></textarea>
 				  </div>
-
+					<a onclick="window.history.back()"><button type="button" class="btn btn-default" name="button"><span class="fa fa-chevron-left "></span> Kembali </button></a>
 				  <button type="submit" class="btn btn-primary pull-right">Simpan</button>
 				</form>
 		</div>

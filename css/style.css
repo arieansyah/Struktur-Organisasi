@@ -1,8 +1,8 @@
 *{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;   
-    position: relative; 
+    box-sizing: border-box;
+    position: relative;
 }
 
 .cf:before,
@@ -39,13 +39,13 @@ a:focus{
 @media all and (max-width: 767px){
     .content{
         padding: 0 20px;
-    }   
+    }
 }
 
 ul{
     padding: 0;
     margin: 0;
-    list-style: none;     
+    list-style: none;
 }
 
 ul a{
@@ -80,7 +80,7 @@ ul a span{
 }
 
 /*
- 
+
  */
 
 .administration > li > a{
@@ -121,13 +121,13 @@ ul a span{
 }*/
 
 .subdirector > li:first-child,
-.departments > li:first-child{  
+.departments > li:first-child{
     width: 25%;
     height: 100px;
-    margin: 0 auto 92px auto;       
+    margin: 0 auto 92px auto;
     padding-top: 25px;
     border-bottom: 4px solid black;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .subdirector > li:first-child{
@@ -136,7 +136,7 @@ ul a span{
     /*border-left: 4px solid black;*/
 }
 
-.departments > li:first-child{  
+.departments > li:first-child{
     float: left;
     left: 32%;
     /*border-right: 4px solid black;  */
@@ -147,14 +147,14 @@ ul a span{
     width: 100%;
 }
 
-.subdirector > li:first-child a{    
+.subdirector > li:first-child a{
     left: 180px;
 }
 
 @media all and (max-width: 767px){
     .subdirector > li:first-child,
     .departments > li:first-child{
-        width: 40%; 
+        width: 40%;
     }
 
     .subdirector > li:first-child{
@@ -180,7 +180,7 @@ ul a span{
 .department:first-child,
 .departments li:nth-child(2){
     margin-left: 0;
-    clear: left;    
+    clear: left;
 }
 
 .departments:after{
@@ -188,7 +188,7 @@ ul a span{
     display: block;
     position: absolute;
     width: 81.8%;
-    height: 22px;   
+    height: 22px;
     border-top: 4px solid #000;
     /*border-right: 4px solid #000;
     border-left: 3px solid #000;*/
@@ -202,7 +202,7 @@ ul a span{
         border-right: none;
         left: 0;
         width: 49.8%;
-    }  
+    }
 }
 
 
@@ -262,8 +262,8 @@ ul a span{
     z-index: 1;
 }
 
-.department > a:hover{  
-    height: 200px;
+.department > a:hover{
+    height: 250px;
 }
 
 .department > ul{
@@ -271,15 +271,15 @@ ul a span{
     margin-bottom: 0px;
 }
 
-.department li{ 
+.department li{
     padding-left: 25px;
     border-bottom: 4px solid #fff;
-    height: 80px;   
+    height: 80px;
 }
 
 .department li a{
     background: #fff;
-    top: 48px;  
+    top: 48px;
     position: absolute;
     z-index: 1;
     width: 90%;

@@ -30,15 +30,16 @@ while($data = $query->fetch_array()){
 				    <label for="exampleInputPassword1">NIP</label>
 				    <input type="text" name="nip" value="<?php echo $data['nip'] ?>" class="form-control" id="exampleInputPassword1" >
 				  </div>
-					<div class="from-group">
-						<label for="exampleInputJabatan">Jabatan</label>
-						<input type="text" name="jabatan" value="<? echo $data['jabatan'] ?>" class="form-control" id="exampleInputJabatan" >
+					<div class="from-group"> <!--jabatan dibuat hidden agar tidak mengubah posisi jabatan-->
+						<!-- <label for="exampleInputJabatan">Jabatan</label> -->
+						<input type="hidden" name="jabatan" value="<? echo $data['jabatan'] ?>" class="form-control" id="exampleInputJabatan" >
 					</div>
 					<br>
 				  <div class="form-group">
 				    <label>Input Foto</label>
 				    <input type="file" name="foto" value="<? echo $data['foto'] ?>"><? echo $data['foto'] ?>
 				  </div>
+					<a onclick="window.history.back()"><button type="button" class="btn btn-default" name="button"><span class="fa fa-chevron-left "></span> Kembali </button></a>
 				  <button type="submit" class="btn btn-primary pull-right">Simpan</button>
 				</form>
 		</div>
